@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+ <HTML lang = "em ">
+<head>
+<meta char set="UTF-8">
+<meta http-equiv="x- UA-compatible"content-"IE=edge">
+<meta name ="viewport "content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"href="">
+<link rel ="stylesheet"href="style.CSS">
+
+<title>Document</title>
+</head>
+<body>
+ 
+<div class ="container">
+        <div class="head">
+              <input type="text Id="result"readonly onchange="change()">
+
+<div>
+<div class="all">
+      <center>
+    <div class="main">
+<button type="button"class="ora"onclick="clearresult()">C</button>
+<button type="button"class="ora"onclick="cal('%')">%</button>
+<button type="button"class="ora"onclick="delete()">⬅</button>
+<button type="button"class="ora"onclick="cal('/')">÷ </button>
+</div>
+
+<div class="main">
+<button type="button"class="num"onclick="cal(7)">7</button>
+<button type="button"class="num"onclick="cal(8)">8</button>
+<button type="button"class="num"onclick="cal(9)">9</button>
+<button type="button"class="ora"onclick="cal(×)">X</button>
+</div>
+
+<div class="main">
+<button type="button"class="num"onclick="cal(4)">4</button>
+<button type="button"class="num"onclick="cal(5)">5</button>
+<button type="button"class="num"onclick="cal(6)">6</button>
+<button type="button"class="ora"onclick="cal('-')">-</button>
+</div>
+
+<div class="main">
+<button type="button"class="num"onclick="cal(1)">1</button>
+<button type="button"class="num"onclick="cal(2)">2</button>
+<button type="button"class="num"onclick="cal(3)">3</button>
+<button type="button"class="ora"onclick="cal('+')">+</button>
+</div>
+
+<div class="main">
+<button type="button"class="num"onclick="cal(000)">00</button>
+<button type="button"class="num"onclick="cal(0)">0</button>
+<button type="button"class="num"onclick="cal(.)">.</button>
+<button type="button"class="ora"onclick="cal( )">=</
+button>
+</div>
+
+</center>
+</div>
+</div>
+
+<script>
+function clearresult(){
+ Document.getElement byId('result').value="";
+}
+function cal (number){
+Document.GetElement byId('result').value += number
+}
+function delete(){
+Var drop =document.get elementbyId('result').value
+     drop=drop.substring(8, drop.length - 1);
+}
+function equalcalcu(){
+Try{
+var getvalue =document .getElementById('result').value;
+Var
+ q-EV(get value);
+document.getElementById('result').value=q;
+}
+catch{
+document.getElementById('result').innerHTML=
+"SYNTAX ERROR";
+}
+}
+</Script>
+</body>
+</HTML>
+
+
